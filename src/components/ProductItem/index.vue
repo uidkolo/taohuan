@@ -62,22 +62,22 @@ export default {
     top: 0;
     .value {
       position: absolute;
-      left: 8px;
-      top: 8px;
+      left: 6px;
+      top: 6px;
       z-index: 2;
       color: #fff;
-      font-size: 14px;
+      font-size: 13px;
     }
     &::after {
       position: absolute;
-      left: -40px;
-      top: -40px;
+      left: -34px;
+      top: -34px;
       content: "";
       display: block;
       width: 0px;
       height: 0px;
-      border: 40px solid transparent;
-      border-right: 40px solid rgba(140, 34, 44, 0.7);
+      border: 34px solid transparent;
+      border-right: 34px solid rgba(140, 34, 44, 0.7);
       transform: rotate(45deg);
     }
   }
