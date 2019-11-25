@@ -13,11 +13,10 @@
           <div class="item"><Icon class="hot_icon" value='&#xe601;'></Icon></div>
         </div>
       </div>
-      <div class="nav_item">博物馆</div>
-      <div class="nav_item">古玩城</div>
+      <div class="nav_item">文博黄页</div>
       <div class="nav_item">业内资讯</div>
-      <div class="nav_item">新闻资讯</div>
       <div class="nav_item">衍生服务</div>
+      <div class="nav_item">淘友论坛</div>
       </div>
   </div>
 </template>
