@@ -1,18 +1,8 @@
 <template>
   <div class="classify">
-    <div class="left">
-      <div class="item" v-for="(item, index) in classifys" :key="index" @mouseover='handleItem(item)'>
-        <Icon :value="item.icon" :size='20' class="icon" />
-        <span>{{item.name}}</span>
-      </div>
-    </div>
-    <div class="right">
-      <div class="list_item" v-for="(item, index) in childClassifys" :key="index">
-        <span class="label">{{item.label}}</span>
-        <div class="child" v-for="(item2, index2) in item.child" :key="index2">
-          <span class="child_item">{{item2}}</span>
-        </div>
-      </div>
+    <div class="item" v-for="(item, index) in classifys" :key="index" @mouseover='handleItem(item)'>
+      <Icon :value="item.icon" :size='20' class="icon" />
+      <span>{{item.name}}</span>
     </div>
   </div>
 </template>
@@ -29,6 +19,10 @@ export default {
       childClassifys: [],
       classifys: [
         {
+          name: '陶器',
+          icon: '&#xe621;'
+        },
+        {
           name: '瓷器',
           icon: '&#xe6d6;'
         },
@@ -37,32 +31,64 @@ export default {
           icon: '&#xe705;'
         },
         {
-          name: '字画',
+          name: '青铜器',
+          icon: '&#xe704;'
+        },
+        {
+          name: '金银器',
+          icon: '&#xe608;'
+        },
+        {
+          name: '中国书画',
           icon: '&#xe706;'
+        },
+        {
+          name: '油画雕塑',
+          icon: '&#xe630;'
         },
         {
           name: '钱币',
           icon: '&#xe605;'
         },
         {
-          name: '木器',
-          icon: '&#xe703;'
+          name: '古籍刊报',
+          icon: '&#xe60f;'
         },
         {
-          name: '铜器',
-          icon: '&#xe704;'
+          name: '邮品票证',
+          icon: '&#xe602;'
         },
         {
-          name: '珠宝',
-          icon: '&#xe603;'
+          name: '竹/木/漆器',
+          icon: '&#xe606;'
         },
         {
-          name: '钟表西洋器',
-          icon: '&#xe610;'
+          name: '织绣品',
+          icon: '&#xe624;'
+        },
+        {
+          name: '紫砂',
+          icon: '&#xe6e5;'
+        },
+        {
+          name: '奇石石艺',
+          icon: '&#xe6a6;'
+        },
+        {
+          name: '珠宝矿石',
+          icon: '&#xe609;'
+        },
+        {
+          name: '民俗品',
+          icon: '&#xe625;'
+        },
+        {
+          name: '造像宗教用品',
+          icon: '&#xe61b;'
         },
         {
           name: '杂项',
-          icon: '&#xe60a;'
+          icon: '&#xe611;'
         }
       ]
     }
@@ -78,19 +104,24 @@ export default {
 <style lang="scss" scoped>
 .classify{
   height: 360px;
-  width: 180px;
+  width: 200px;
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
   .item{
     background: #fff;
+    width: 100px;
+    flex-shrink: 0;
     height: 40px;
     display: flex;
     align-items: center;
     border-bottom: 1px solid #eee;
-    padding: 0 15px;
+    border-right: 1px solid #eee;
+    padding: 0 10px;
     color: #000;
     .icon{
-      margin-right: 15px;
+      margin-right: 5px;
+      width: 20px;
+      flex-shrink: 0;
       line-height: 1;
       color: #8c222c;
     }

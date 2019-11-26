@@ -287,12 +287,12 @@ export default {
     .container{
       display: flex;
       .left{
-        width: 180px;
+        width: 200px;
         flex-shrink: 0;
       }
       .center{
         flex-grow: 1;
-        width: 710px;
+        width: 700px;
         margin: 0 10px;
         .bottom{
           display: flex;
